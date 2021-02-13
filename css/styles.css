@@ -17,7 +17,16 @@ a {
 }
 
 ul {
+  margin: 0;
+  padding: 0;
   list-style: none;
+}
+
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .visually-hidden {
@@ -35,6 +44,16 @@ ul {
 
 /* header */
 
+.header {
+  display: flex;
+  align-items: center;
+  min-height: 80px;
+}
+
+.header a {
+  display: block;
+}
+
 .logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -44,13 +63,36 @@ ul {
   color: var(--accent-color);
 }
 
-header > a {
+.container > a {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
   color: var(--primary-color);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  /* margin-left: 93px; */
+}
+
+.nav-menu {
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+.nav-menu-contacts {
+  display: flex;
+}
+
+.nav-menu-item {
+  margin-left: 50px;
+}
+
+.nav-menu-item:first-of-type {
+  margin-left: 0;
 }
 
 .nav-menu-link {
@@ -72,11 +114,17 @@ header > a {
 }
 
 .nav-menu-link-contacts {
+  display: block;
+  margin-left: 50px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
   color: var(--link-color);
+}
+
+.nav-menu-contacts:first-child {
+  margin-left: 0;
 }
 
 .nav-menu-link-contacts:hover,
@@ -122,6 +170,7 @@ header > a {
 }
 
 .benefits-content {
+  margin: 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
@@ -163,6 +212,7 @@ header > a {
 }
 
 .team-item-descr {
+  margin: 0;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.2;
