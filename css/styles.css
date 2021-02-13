@@ -142,10 +142,13 @@ ul {
 /* Стили для героя */
 
 .hero {
+  max-width: 1600px;
+  max-height: 600px;
   background-color: var(--bgd-color);
 }
 
 .hero-title {
+  padding-top: 200px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
@@ -155,13 +158,32 @@ ul {
   color: var(--white-color);
 }
 
+.hero-btn-item {
+  text-align: center;
+}
+
 .hero-btn {
+  margin-top: 30px;
+  margin-bottom: 200px;
+  padding: 10px 32px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--white-color);
+  background-color: var(--accent-color);
+}
+
+.hero-btn:hover,
+.hero-btn:focus,
+.hero-btn:active {
+  color: var(--secondary-color);
+  background-color: var(--secondary-white-color);
 }
 
 /* Стили для блока 2 */
