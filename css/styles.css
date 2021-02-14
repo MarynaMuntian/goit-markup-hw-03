@@ -66,7 +66,7 @@ ul {
   color: var(--accent-color);
 }
 
-.container > a {
+.container.header > a {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -293,10 +293,14 @@ ul {
 
 /* Стили для футера */
 
-.footer {
+.footer .container {
+  min-height: 252px;
   background-color: var(--bgd-color);
 }
-footer > a {
+
+.footer-logo-link {
+  display: block;
+  padding-top: 60px;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -306,6 +310,7 @@ footer > a {
 }
 
 .footer-address {
+  margin-top: 20px;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -315,6 +320,8 @@ footer > a {
 }
 
 .footer-link {
+  display: block;
+  margin-top: 9px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
