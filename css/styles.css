@@ -188,6 +188,15 @@ ul {
 
 /* Стили для блока 2 */
 
+.benefits-box {
+}
+
+.benefits {
+  display: flex;
+  padding: 94px 0;
+  outline: 2px solid red;
+}
+
 .benefits-title {
   font-weight: 700;
   font-size: 14px;
