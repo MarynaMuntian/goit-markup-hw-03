@@ -7,6 +7,7 @@
   --secondary-white-color: #f5f4fa;
   --bgd-color: #2f303a;
   --border-color: #ececec;
+  --portfolio-border-color: #eeeeee;
 }
 
 body {
@@ -28,7 +29,6 @@ ul {
   padding: 0 15px;
   margin-left: auto;
   margin-right: auto;
-  outline: 2px solid red;
 }
 
 .visually-hidden {
@@ -79,19 +79,17 @@ ul {
   display: flex;
   justify-content: space-between;
   margin-left: 93px;
-  outline: 2px solid red;
 }
 
 .nav-menu {
   display: flex;
-  outline: 2px solid red;
+
   justify-content: space-between;
 }
 
 .nav-menu-contacts {
   display: flex;
   margin-left: 331px;
-  outline: 2px solid red;
 }
 
 .nav-menu-item {
@@ -193,7 +191,6 @@ ul {
 .benefits {
   display: flex;
   padding: 94px 0;
-  outline: 2px solid red;
 }
 
 .benefits-item {
@@ -233,8 +230,7 @@ ul {
   display: flex;
   justify-content: space-between;
   padding-top: 50px;
-  margin-bottom: 94px;
-  outline: 2px solid red;
+  padding-bottom: 94px;
 }
 
 .aside-img {
@@ -274,7 +270,7 @@ ul {
 }
 
 .team-list-descr {
-  margin-top: 30px;
+  padding-top: 30px;
   padding-bottom: 30px;
 }
 
@@ -324,6 +320,10 @@ ul {
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--white-color);
+}
+
+.footer-link-list {
+  padding-bottom: 60px;
 }
 
 .footer-link {
@@ -386,18 +386,15 @@ ul {
   display: flex;
   flex-wrap: wrap;
   margin: 0 -30px -30px 0;
-  outline: 2px solid red;
 }
 
-.portfolio-gallery .portfolio-gallery-item {
+.portfolio-gallery-item {
   flex-basis: calc(100% / 3 - 30px);
   margin: 0 30px 30px 0;
-  outline: 2px solid red;
 }
 
 .portfolio-img-thumb {
   display: block;
-  outline: 2px solid red;
 }
 
 .portfolio-img-thumb img {
@@ -406,9 +403,12 @@ ul {
 
 .portfolio-descr {
   padding: 20px 24px;
+  border: 1px solid var(--portfolio-border-color);
+  border-top: none;
 }
 
 .portfolio-item {
+  margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
