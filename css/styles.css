@@ -263,12 +263,19 @@ ul {
   padding-bottom: 94px;
 }
 
+.team-list-item {
+  background-color: var(--white-color);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
 .team-list-img {
   display: block;
 }
 
 .team-list-descr {
   margin-top: 30px;
+  padding-bottom: 30px;
 }
 
 .team-item {
@@ -331,7 +338,22 @@ ul {
 
 /* Стили для portfolio */
 
+.portfolio {
+  padding: 94px 0;
+}
+
+.portfolio-btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio-btn-list {
+  display: flex;
+  margin-bottom: 34px;
+}
+
 .portfolio-btn {
+  padding: 6px 22px;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -341,6 +363,16 @@ ul {
   color: var(--secondary-color);
   background-color: var(--secondary-white-color);
   cursor: pointer;
+  border-radius: 4px;
+  border: none;
+}
+
+.portfolio-btn-list-item {
+  margin-right: 8px;
+}
+
+.portfolio-btn-list-item:last-child {
+  margin-right: 0;
 }
 
 .portfolio-btn:hover,
@@ -348,6 +380,32 @@ ul {
 .portfolio-btn:active {
   color: var(--white-color);
   background-color: var(--accent-color);
+}
+
+.portfolio-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -30px -30px 0;
+  outline: 2px solid red;
+}
+
+.portfolio-gallery .portfolio-gallery-item {
+  flex-basis: calc(100% / 3 - 30px);
+  margin: 0 30px 30px 0;
+  outline: 2px solid red;
+}
+
+.portfolio-img-thumb {
+  display: block;
+  outline: 2px solid red;
+}
+
+.portfolio-img-thumb img {
+  display: block;
+}
+
+.portfolio-descr {
+  padding: 20px 24px;
 }
 
 .portfolio-item {
@@ -359,6 +417,7 @@ ul {
 }
 
 .portfolio-item-descr {
+  margin: 0;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.9;
