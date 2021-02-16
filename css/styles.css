@@ -45,12 +45,15 @@ ul {
 }
 
 /* header */
+.border {
+  border-bottom: 1px solid var(--border-color);
+}
 
 .header {
   display: flex;
   align-items: center;
-  min-height: 80px;
-  border-bottom: 1px solid var(--border-color);
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .header a {
@@ -296,9 +299,12 @@ ul {
 
 /* Стили для футера */
 
+.footer {
+  background-color: var(--bgd-color);
+}
+
 .footer .container {
   min-height: 252px;
-  background-color: var(--bgd-color);
 }
 
 .footer-logo-link {
